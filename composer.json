@@ -1,0 +1,37 @@
+{
+    "name": "wikigods/jraty",
+    "description": "Package for item ratings + optional microdata format.",
+    "keywords": ["rating","jraty", "microdata", "seo", "laravel"],
+    "homepage": "http://github.com/wikigods/jraty",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jc So",
+            "email": "wikigods@gmail.com",
+            "homepage": "https://wikigods.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/wikigods/jraty/issues"
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wikigods\\Jraty\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wikigods\\Jraty\\JratyServiceProvider",
+                "Wikigods\\Jraty\\RouteServiceProvider"
+            ],
+            "aliases": {
+                "Jraty": "Wikigods\\Jraty\\Facades\\Jraty"
+            }
+        }
+    }
+}
