@@ -12,9 +12,9 @@ class JratyServiceProvider extends ServiceProvider {
             'jraty'
         );
 		
-	if (config('jraty.load_migrations', false)) {
-            $this->loadMigrationsFrom($this->basePath('database/migrations'));
-        }
+	
+	//$this->loadMigrationsFrom($this->basePath('database/migrations'));
+        
 
         $this->publishes([
             $this->basePath('database/migrations') => database_path('migrations')
